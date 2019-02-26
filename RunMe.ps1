@@ -1,5 +1,4 @@
 ﻿# Run
-
 $scriptpath = $MyInvocation.MyCommand.Path
 $scriptDir = Split-Path $scriptpath
 

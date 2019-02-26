@@ -1,8 +1,4 @@
-﻿$scriptpath = $MyInvocation.MyCommand.Path
-$totalDir = Split-Path $scriptpath
-Import-Module $totalDir\PSLogging\PSLogging.psm1
-
-function queryActiveDirectoryUser {
+﻿function queryActiveDirectoryUser {
     [CmdletBinding()]
     Param (
         [Parameter(Mandatory = $True)]
