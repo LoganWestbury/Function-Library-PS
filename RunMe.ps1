@@ -1,6 +1,10 @@
 ﻿# Run
-$scriptpath = $MyInvocation.MyCommand.Path
-$scriptDir = Split-Path $scriptpath
+$scriptDir = Split-Path ($MyInvocation.MyCommand.Path)
+Import-Module $scriptDir\Open-LinkInChrome.psm1
 
-Import-Module $totalDir\Open-LinkInChrome.psm1
+Write-Host ("Running scripts from: $scriptDir")
+
+Write-Host ("Running Open URL")
+
+Open-LinkInChrome
 

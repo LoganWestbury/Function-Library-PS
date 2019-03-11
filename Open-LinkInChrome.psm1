@@ -1,4 +1,5 @@
-function openLinkInChrome { 
+
+function Open-LinkInChrome { 
 
     [CmdletBinding()]
     Param (
@@ -14,3 +15,4 @@ function openLinkInChrome {
         Start-Process $url
     }
 }
+
